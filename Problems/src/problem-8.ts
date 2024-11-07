@@ -25,5 +25,5 @@ true;
 
   // Sample Input
   const person = { name: "Alice", age: 25, email: "Alice@email.com" };
-  console.log(validateKeys(person, ["name", "age"])); 
+  console.log(validateKeys(person, ["name", "age"]))
 }
