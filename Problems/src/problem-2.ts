@@ -22,7 +22,7 @@ removeDuplicates([1, 2, 2, 3, 4, 4, 5])[
         
     }
 
-   const result =  removeDuplicates([1, 2, 2, 3, 4, 4, 5, 7,7,7 , 8,8]);
+   const result =  removeDuplicates([1,2,2,3,4,4,5]);
    console.log(result)
 
 }

@@ -14,10 +14,7 @@
        return sumResult;
     }
 
-    const result1 = sumArray([1,2,3,4,5]);
-    const result2 = sumArray([10,20,30,])
-    console.log(result1)
-    console.log(result2)
-
+   const result1 = sumArray([1,2,3,4,5,5,5]);
+   console.log(result1)
   
 }

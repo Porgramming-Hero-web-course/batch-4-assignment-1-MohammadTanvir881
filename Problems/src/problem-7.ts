@@ -1,31 +1,39 @@
 {
-    // Problem 7
+  /**
+    Problem 7:
+Create a TypeScript class Car with properties make, model, and year. Include a method getCarAge that returns the car's age based on the current year.
 
-    const currentYear : number = new Date().getFullYear();
+// Sample Input 1:
+const car = new Car("Honda", "Civic", 2018);
+car.getCarAge();
 
-    class Car {
-        make : string;
-        model : string;
-        year : number;
+// Sample Output 1:
+6 (assuming current year is 2024)
+    */
 
-        constructor(make : string , model : string , year : number){
-            this.make = make;
-            this.model = model;
-            this.year = year;
-        }
-        getCarAge(){
-            if(currentYear >= this.year){
-                // console.log(`${currentYear - this.year} (Assuming Current Year is ${currentYear})`)
-                const carAge = currentYear - this.year
-                console.log(carAge , "( Assuming Current year is :" , currentYear , ")" )
-            }
-            else {
-                console.log("This car is not release yet")
-            }
-            
-        }
+  const currentYear: number = new Date().getFullYear();
+
+  class Car {
+    make: string;
+    model: string;
+    year: number;
+
+    constructor(make: string, model: string, year: number) {
+      this.make = make;
+      this.model = model;
+      this.year = year;
     }
+    getCarAge() {
+      if (currentYear >= this.year) {
+        // console.log(`${currentYear - this.year} (Assuming Current Year is ${currentYear})`)
+        const carAge = currentYear - this.year;
+        console.log(carAge, "( Assuming Current year is :", currentYear, ")");
+      } else {
+        console.log("This car is not release yet");
+      }
+    }
+  }
 
-    const car = new Car("honda" , "civic" , 2019)
-    car.getCarAge()
+  const car = new Car("Honda", "Civic", 2018 ,)
+  car.getCarAge();
 }
